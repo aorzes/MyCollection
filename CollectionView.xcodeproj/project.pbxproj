@@ -13,6 +13,7 @@
 		EC28E65E1ED98EF7001CFC81 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC28E65C1ED98EF7001CFC81 /* Main.storyboard */; };
 		EC28E6601ED98EF8001CFC81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC28E65F1ED98EF8001CFC81 /* Assets.xcassets */; };
 		EC28E6631ED98EF8001CFC81 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC28E6611ED98EF8001CFC81 /* LaunchScreen.storyboard */; };
+		EC28E66C1ED9953B001CFC81 /* CollectionCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC28E66B1ED9953B001CFC81 /* CollectionCellCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		EC28E65F1ED98EF8001CFC81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC28E6621ED98EF8001CFC81 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC28E6641ED98EF8001CFC81 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC28E66A1ED9953B001CFC81 /* CollectionCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCellCollectionViewCell.h; sourceTree = "<group>"; };
+		EC28E66B1ED9953B001CFC81 /* CollectionCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCellCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				EC28E6561ED98EF7001CFC81 /* AppDelegate.h */,
 				EC28E6571ED98EF7001CFC81 /* AppDelegate.m */,
+				EC28E66A1ED9953B001CFC81 /* CollectionCellCollectionViewCell.h */,
+				EC28E66B1ED9953B001CFC81 /* CollectionCellCollectionViewCell.m */,
 				EC28E6591ED98EF7001CFC81 /* ViewController.h */,
 				EC28E65A1ED98EF7001CFC81 /* ViewController.m */,
 				EC28E65C1ED98EF7001CFC81 /* Main.storyboard */,
@@ -151,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC28E66C1ED9953B001CFC81 /* CollectionCellCollectionViewCell.m in Sources */,
 				EC28E65B1ED98EF7001CFC81 /* ViewController.m in Sources */,
 				EC28E6581ED98EF7001CFC81 /* AppDelegate.m in Sources */,
 				EC28E6551ED98EF7001CFC81 /* main.m in Sources */,

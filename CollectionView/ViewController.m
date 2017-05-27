@@ -7,22 +7,34 @@
 //
 
 #import "ViewController.h"
+#import "CollectionCellCollectionViewCell.h"
 
 @interface ViewController ()
-
+{
+    NSArray *myArray;
+}
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    myArray = @[@"jedan",@"dva",@"tri",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11"];
+    self.myCollection.dataSource =self;
+    self.myCollection.delegate =self;
 }
 
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return myArray.count;
+}
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    CollectionCellCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"myCell" forIndexPath:indexPath];
+    cell.labela1.text = [myArray objectAtIndex:indexPath.item];
+    return cell;
 }
 
 
