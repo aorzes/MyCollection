@@ -38,4 +38,11 @@
 }
 
 
+
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
+    // Adjust cell size for orientation
+    
+    return _myCollection.frame.size;
+}
+
 @end
